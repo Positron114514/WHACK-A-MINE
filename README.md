@@ -23,16 +23,16 @@
 暴露的格子可能会出现地鼠(此时击倒地鼠后不会产生地鼠对应效果)，但不再会出现地雷。
 随着分数的增加, 地鼠冒头频率会变高。
 
-- 未暴露方块 : ![block](bin\res\graph\block.png)                                                        已暴露方块:  ![empty](bin\res\graph\empty.jpg)
+- 未暴露方块 : ![block](bin//res//graph//block.png)                                                        已暴露方块:  ![empty](bin//res//graph//empty.jpg)
 
 #### 地鼠种类 (出现概率递减):
 
-- ![shrewNormal](bin\res\graph\shrewNormal.png)**探测地鼠 (普通地鼠)** : 击中后地鼠所在格子暴露，其周边的格子(3\*3的范围，去掉地鼠所在格子共8个格子)会显示数字，分别表示该格子周围的地雷数量(功能同扫雷);
-- ![shrewMulti](bin\res\graph\shrewMulti.png)**混乱地鼠**: 击中后地鼠所在格子不暴露, 其周边格子(3*3的范围，去掉地鼠所在格子共8个格子)所含的地雷重新分配(已经暴
+- ![shrewNormal](bin//res//graph//shrewNormal.png)**探测地鼠 (普通地鼠)** : 击中后地鼠所在格子暴露，其周边的格子(3\*3的范围，去掉地鼠所在格子共8个格子)会显示数字，分别表示该格子周围的地雷数量(功能同扫雷);
+- ![shrewMulti](bin//res//graph//shrewMulti.png)**混乱地鼠**: 击中后地鼠所在格子不暴露, 其周边格子(3*3的范围，去掉地鼠所在格子共8个格子)所含的地雷重新分配(已经暴
 
 ​       露的格子不会出现地雷);
 
-- ![shrewChaos](bin\res\graph\shrewChaos.png)**不稳定地鼠**: 击中后地鼠所在格子暴露, 若地鼠所在格子存在地雷, 则地雷爆炸, 玩家失去5点生命 (爆炸的地雷也算作找到)
+- ![shrewChaos](bin//res//graph//shrewChaos.png)**不稳定地鼠**: 击中后地鼠所在格子暴露, 若地鼠所在格子存在地雷, 则地雷爆炸, 玩家失去5点生命 (爆炸的地雷也算作找到)
 
 #### 计分规则
 
