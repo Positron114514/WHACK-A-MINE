@@ -1,0 +1,21 @@
+Game rules: The game interface is a 10*10 grid, similar to the initial interface of Minesweeper.
+There are initially 10 mines placed on the grid. The gophers can be found on any grid and if they are not hit with
+a hammer in time, the player will lose health. If the player's health reaches zero, the game will fail.
+
+If a gopher is not hit, the player loses health and the hidden mines around the gopher (within a 3*3 range excluding
+the 8 cells where the gopher is located) will be redistributed.
+
+When a gopher is successfully hit, it falls down and triggers specific functions based on its species:
+
+- Detection Gopher: When hit, exposes its grid and reveals numbers in surrounding grids (within a 3*3 range excluding
+  those containing other gophers), indicating how many mines are nearby (similar to Minesweeper).
+
+- Chaotic Gopher: When hit, does not expose its grid but redistributes mines within surrounding grids (within a 3*3
+  range excluding those containing other gophers). No new mines appear in previously exploded grids.
+
+- Unstable Gopher: When hit, exposes its grid. If there are mines in that particular grid, they explode causing the
+  player to lose 5 health.
+
+Scoring rules:
+In the event of a game failure, the score increases proportionally with the number of mines discovered.
+Conversely, in case of a game victory, the score is inversely proportional to the time taken.
